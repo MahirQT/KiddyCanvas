@@ -11,16 +11,25 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="flower1"><img src="{{ url_for('static', filename='animated_gifs/56.gif') }}" alt="gif1"></div>
+    <div class="flower2"><img src="{{ url_for('static', filename='animated_gifs/4.gif') }}" alt="gif1"></div>
+    <div class="butterfly"><img src="{{ url_for('static', filename='animated_gifs/64.gif') }}" alt="gif1"></div>
+    <div class="butterfly2"><img src="{{ url_for('static', filename='animated_gifs/64.gif') }}" alt="gif1"></div>
+    <div class="porcupine"><img src="{{ url_for('static', filename='animated_gifs/3.gif') }}" alt="gif1"></div>
+    <div class="deer"><img src="{{ url_for('static', filename='animated_gifs/1.gif') }}" alt="gif1"></div>
+
+
     <div class="container">
         <h1>Kiddy<span>Canvas</span>🎨</h1> 
-        <h3> <span>KiddyCanvas</span>  is a web-based educational app designed to help young children learn alphabets and numbers in a fun and interactive way</h3>
+        <h3><span  style='font-family: "Fredoka", sans-serif;color: #1b1f3b;'>Kiddy</span> <span style='font-family: "Fredoka", sans-serif;'>Canvas</span> is a web-based educational app designed to help <span style="color:pink;">Young children 👶🏻</span> learn alphabets and numbers in a fun and interactive way</h3>
             <div class="drawing-container">
                 <canvas id="drawingCanvas" width="280" height="280"></canvas>
                 <div class="button-container">
-                    <button id="predictBtn" class="btn">Predict</button>
-                    <button id="clearBtn" class="btn">Clear</button>
+                    <button id="predictBtn" class="btn">Predict🔍</button>
+                    <button id="clearBtn" class="btn">Clear🧹</button>
                 </div>
             </div>
+            
             <!-- Animated GIFs start -->
             <!-- <div class="gifs-container">
                 <img src="{{ url_for('static', filename='animated_gifs/1.gif') }}" alt="gif1">

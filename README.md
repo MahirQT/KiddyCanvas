@@ -1,4 +1,4 @@
-# EMNIST Handwritten Character Recognition
+# KiddyCanvas Handwritten Character Recognition
 
 This project implements a Convolutional Neural Network (CNN) for recognizing handwritten characters using the EMNIST dataset. It includes a drawing application that allows users to draw characters and get real-time predictions.
 
