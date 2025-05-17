@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KiddyCanvas</title>
+<link rel="websitr icon" href="{{ url_for('static', filename='kiddyCanvaslogo.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=National+Park:wght@200..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Kiddy<span>Canvas</span>🎨</h1> 
+        <h3> <span>KiddyCanvas</span>  is a web-based educational app designed to help young children learn alphabets and numbers in a fun and interactive way</h3>
+            <div class="drawing-container">
+                <canvas id="drawingCanvas" width="280" height="280"></canvas>
+                <div class="button-container">
+                    <button id="predictBtn" class="btn">Predict</button>
+                    <button id="clearBtn" class="btn">Clear</button>
+                </div>
+            </div>
+            <!-- Animated GIFs start -->
+            <!-- <div class="gifs-container">
+                <img src="{{ url_for('static', filename='animated_gifs/1.gif') }}" alt="gif1">
+                <img src="{{ url_for('static', filename='animated_gifs/3.gif') }}" alt="gif3">
+                <img src="{{ url_for('static', filename='animated_gifs/4.gif') }}" alt="gif4">
+                <img src="{{ url_for('static', filename='animated_gifs/5.gif') }}" alt="gif5">
+                <img src="{{ url_for('static', filename='animated_gifs/56.gif') }}" alt="gif56">
+                <img src="{{ url_for('static', filename='animated_gifs/64.gif') }}" alt="gif64">
+                <img src="{{ url_for('static', filename='animated_gifs/545.gif') }}" alt="gif545">
+            </div> -->
+            <!-- Animated GIFs end -->
+            <div class="results-container">
+                <div class="prediction-box">
+                    <h2>Top Prediction</h2>
+                    <div id="topPrediction" class="prediction">
+                        <span class="character">-</span>
+                        <span class="confidence">Draw a character</span>
+                    </div>
+                </div>
+                <div class="other-predictions">
+                    <h2>Other Possibilities</h2>
+                    <div id="otherPredictions" class="predictions-list">
+                        <!-- Other predictions will be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html> 
