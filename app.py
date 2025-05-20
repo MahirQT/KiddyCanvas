@@ -5,6 +5,8 @@ from PIL import Image, ImageOps
 import io
 import base64
 import os
+import pyttsx3 as sp  
+
 
 app = Flask(__name__)
 
@@ -91,8 +93,6 @@ def predict():
         }), 500
 
 if __name__ == '__main__':
-    # Use environment variable for port if available (for Render)
     port = int(os.environ.get('PORT', 5000))
-    # Don't use debug mode in production
     debug = os.environ.get('FLASK_ENV') == 'development'
     app.run(host='0.0.0.0', port=port, debug=debug) 
