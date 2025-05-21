@@ -5,9 +5,6 @@ from PIL import Image, ImageOps
 import io
 import base64
 import os
-import pyttsx3 as sp  
-
-
 app = Flask(__name__)
 
 # Load the model and mapping at startup
